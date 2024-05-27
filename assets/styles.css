@@ -1,0 +1,467 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+    color: #222222;
+    font-size: .8em;
+    line-height: 1.4;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0 .5rem 1rem .5rem;
+    padding: 0;
+}
+
+.img-sections {
+    height: 35vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Navigation bar*/
+
+header {
+    margin: 0;
+    padding: 0;
+    background-color: #143557;
+    justify-content: space-between;
+    
+}
+nav {
+    margin: 0;
+    margin-left: 1em;
+    padding: 0; 
+    color: white;
+}
+
+h1 {
+   color: white;
+   font-size: 2rem;
+}
+
+i {
+    margin: 0;
+    margin-right: 1em;
+    padding: 0; 
+    color: white;
+    font-size: 1.2rem;
+}
+
+.navbar {
+    width: 100%;
+    height: 3em;
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Intro */
+
+.hero-img {
+    margin: 0;
+    padding: 0;
+    height: 35vh;
+    background-image: url("photos/Background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-flex {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+.hero-p {
+    margin-bottom: 2rem;
+}
+
+/* Intro text */
+
+h3 {
+    color: #143557;
+    font-weight: bold;
+    margin: .5rem;
+    font-size: 1.2rem;
+}
+
+.intro-box {
+    background-color: #f3f3f3;
+    height: 4vh;
+}
+ 
+/* Future of EVs */
+
+.future-container {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.text-grey_box {
+    background-color: #f3f3f3;
+}
+
+/* Related articles */
+
+h4 {
+    margin: .5rem;
+    font-weight: bold;
+}
+
+.container {
+    margin: .5rem;
+    margin-top: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row nowrap;
+
+}
+
+.related-text {
+    background-color: #f3f3f3;
+}
+
+.related-img {
+    width: 15em;
+    height: 15em;
+    object-fit: cover;
+}
+
+/*Subscribe field */
+
+.subscribe-flex {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+}
+.h3-blue {
+    color: #2e79c3;
+    font-weight: bold;
+    margin-bottom: .2rem ;
+}
+
+.subscribe-text {
+    margin: .4rem 1rem;
+    text-align: center;
+}
+
+input {
+    margin: .2rem;
+    border: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+.subscribe-a {
+    padding: .5em;
+    margin: 1rem .5rem 1.5rem;
+    width: 90%;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: .9rem;
+    background-color: #2e79c3;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 5px 15px 0 rgba(0, 0, 0, 0.18);
+}
+
+/* Underline */
+hr {
+    border: none;
+    height: .3vh;
+    background-color: #2e79c3;
+    margin: 0 .5rem;
+    width: 92%;
+}
+
+/* Footer */
+
+footer {
+    margin: 0;
+    padding: 0;
+    background-color: #143557;
+    color: white;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.h3-white {
+    color: white;
+    margin-bottom: .5em;
+    font-size: 1rem;
+}
+
+.footer-p {
+    font-size: .7rem;
+}
+
+.footer-icons {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    
+}
+
+.footer-i {
+    margin: 0 .2em .5em;
+    font-size: 2rem;
+}
+
+
+/* bigger displays */ 
+
+@media(min-width: 500px) {
+    .related-grid {
+        display: grid;
+        grid-template-columns: .5fr repeat(2, 1.5fr) .5fr;
+        grid-template-rows: 1fr;
+        column-gap: 2em;
+    }
+
+    .related-h3 {
+        grid-column: 2;
+        grid-row: 1;
+        margin: 1rem 0;
+    }
+    
+    .related-img {
+        width: 100%;
+    }
+
+   .container {
+        margin: 0;
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .related-text {
+        width: 100%;
+        height: 15vh; 
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+
+    .charging-container {
+        grid-column: 2;
+        grid-row: 2;
+        margin: 0;
+        padding: 0;
+        
+    }
+ 
+    .jeep-conatiner {
+        grid-column: 3;
+        grid-row: 2;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+@media(min-width: 1050px) {
+
+    body {
+        font-size: 1.2rem;
+    }
+
+    section, aside {
+        margin: 3rem;
+    }   
+    
+    aside {
+        margin-right: 0;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    .margin-h3 {
+        margin-left: 2.5rem;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    } 
+
+    .hero-img{
+        height: 75vh;
+    }
+
+    .hero-flex {
+        justify-content: flex-end;
+    }
+
+    .hero-p {
+        font-size: 1em;
+        margin-bottom: 5rem;
+    }
+
+
+    .intro {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        text-align: justify;
+    }
+
+    .intro-box {
+        display: none;
+    }
+
+    .premium-img {
+        height: 55vh;
+        width: 100%;
+        object-fit: cover;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .premium-text {
+        margin: 0 2.5rem;
+        text-align: justify;
+    }
+
+    .premium-border {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        border: solid .3em #f3f3f3;
+        border-left: none;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+
+
+    .future-container {
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+    
+    .future-image {
+        height: 55vh;
+        width: 100%;
+        margin: 0;
+    }
+
+    .text-grey_box {
+        margin: 0;
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+
+    .future-text {
+        margin: 0 2.5rem;
+        text-align: justify;
+    }
+
+    .related-grid {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        background-color: #f3f3f3;
+    }
+
+    .related-grid_2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        column-gap: 3rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .related-img {
+        width: 30vw;
+    }
+
+    .related-h3 {
+        grid-column: 1;
+        grid-row: 1;
+        margin: 2rem 0;
+    }
+
+    .container {
+        margin: 0;
+        margin-bottom: 2.5rem;
+    }
+
+    .charging-container {
+        grid-column: 1;
+        grid-row: 2;
+        margin: 0;
+        padding: 0;
+    }
+ 
+    .jeep-conatiner {
+        grid-column: 1;
+        grid-row: 3;
+        margin: 0;
+        padding: 0;
+    }
+
+    .related-text {
+        display: flex;
+        flex-flow: column nowrap;
+        margin: .5em;
+        width: 28vw;
+        text-align: justify;
+        background-color: #f3f3f3;
+    }
+
+    .related-border {
+        border: solid .3em white;
+    }
+
+    .subscribe-flex {
+        margin-left: 0;
+        justify-content: center;
+        border: solid .3em #2e79c3;
+    }
+
+    .h3-blue {
+        margin-bottom: 2rem;
+    }
+    
+    .subscribe-text {
+        margin-bottom: 1.5rem;
+    }
+    
+    input {
+        margin-bottom: .5rem;
+        font-size: 1.2rem;
+    }
+    
+    .subscribe-a {
+       margin: 1.5rem 0;
+       font-size: 1.2rem;
+    }
+}
+
